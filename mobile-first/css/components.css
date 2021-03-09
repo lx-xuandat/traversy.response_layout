@@ -1,0 +1,158 @@
+/* style */
+#branding h1 {
+    margin: 6.5px;
+}
+
+#branding span {
+    color: #e8491d;
+}
+
+.container section{
+    /* background-color: #f4f4f4;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    margin: 10px 0;
+    padding: 5px 0; */
+}
+/* ------------------- */
+body {
+    font-family     : Arial, Helvetica, sans-serif;
+    font-size       : 15px;
+    line-height     : 1.5;
+    padding         : 0;
+    margin          : 0 auto;
+    width           : 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    color: #6E7b81;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Class container
+- mac dinh co width 100%
+- padding left va right la 15px
+- margin left va right la auto -> (align center )
+
+- mo rong:
+    + sm, md, ... do rong cua noi dung khong the vuot qua
+    + fluid luon luon co do rong 100% voi bat cu kich co man hinh nao
+*/
+
+[class*="container"] {
+    width        : 100%;
+    padding-right: 15px;
+    padding-left : 15px;
+    margin-right : auto;
+    margin-left  : auto;
+}
+
+.container-fluid {
+    width: 100% !important;
+}
+
+@media only screen and (min-width: 768px) {
+    .container-sm {
+        max-width: 720px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container-sm {
+        max-width: 720px;
+    }
+}
+
+/*
+* colors 
+- text corlor: text-
+    + white, dark
+- background color: bg-
+    + primary, secondary
+*/
+.bg-primary-1 {
+    background-color: #35424a;
+}
+
+.txt-white {
+    color: #ffff;
+}
+
+/* He Thong Border */
+.border-bottom-3 {
+    border-bottom: #e8491d 3px solid;
+}
+
+
+
+/* He thong menu*/
+.nav,
+nav {
+    background-color: #35424a;
+}
+
+.nav-item,
+nav li {
+    display   : inline-block;
+    text-align: center;
+    padding   : 5px 0;
+}
+
+.nav-link,
+nav a {
+    text-decoration: none;
+    color          : #ffffff;
+    text-transform : uppercase;
+    font-size      : 16px;
+    padding        : 0 20px 0 20px;
+}
+
+.curent a {
+    color      : #e8491d;
+    font-weight: bold;
+}
+
+.nav-link:hover,
+a:hover {
+    color      : #cccccc;
+    font-weight: bold;
+}
+
+.disable {}
+
+.flex-column li {
+    text-align: left;
+}
+
+/* alignment
+    - justify
+    - left
+*/
+.text-justify {
+    text-align: justify;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* ulti */
+.active {
+    color      : #16af44;
+    font-weight: bold;
+}
